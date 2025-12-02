@@ -1,0 +1,44 @@
+{
+  "name": "kottster-demo-app",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "dev": "kottster dev",
+    "dev:add-data-source": "kottster add-data-source",
+    "build": "vite build && kottster build:server",
+    "start": "node dist/server/server.cjs"
+  },
+  "dependencies": {
+    "@hotjar/browser": "^1.0.9",
+    "@kottster/cli": "^3.0.2",
+    "@kottster/common": "^3.0.2",
+    "@kottster/react": "^3.0.4",
+    "@kottster/server": "^3.0.2",
+    "@mantine/charts": "^8.2.1",
+    "@mantine/core": "^8.2.1",
+    "@mantine/dates": "^8.2.1",
+    "@mantine/hooks": "^8.2.1",
+    "@mantine/modals": "^8.2.1",
+    "@mantine/notifications": "^8.2.1",
+    "@tailwindcss/vite": "^4.1.11",
+    "dayjs": "^1.11.13",
+    "knex": "^3.1.0",
+    "pg": "^8.16.3",
+    "react": "^19.x",
+    "react-dom": "^19.x",
+    "react-router-dom": "^7.x",
+    "recharts": "^3.1.0",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.x",
+    "tsx": "^4.x",
+    "vite": "^6.x",
+    "vite-tsconfig-paths": "^4.x"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

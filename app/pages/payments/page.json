@@ -1,0 +1,89 @@
+{
+  "version": "1.0",
+  "type": "table",
+  "title": "Payments",
+  "icon": "creditCard",
+  "config": {
+    "dataSource": "postgres-db",
+    "fetchStrategy": "databaseTable",
+    "table": "payments",
+    "allowDelete": false,
+    "allowUpdate": false,
+    "allowInsert": false,
+    "columns": [
+      {
+        "position": 0,
+        "relationshipPreviewColumns": [],
+        "id": "id",
+        "column": "id"
+      },
+      {
+        "position": 1,
+        "relationshipPreviewColumns": [
+          "first_name",
+          "last_name"
+        ],
+        "id": "user_id",
+        "column": "user_id"
+      },
+      {
+        "position": 2,
+        "relationshipPreviewColumns": [
+          "name"
+        ],
+        "id": "plan_id",
+        "column": "plan_id"
+      },
+      {
+        "position": 3,
+        "relationshipPreviewColumns": [
+          "name"
+        ],
+        "id": "payment_method_id",
+        "column": "payment_method_id"
+      },
+      {
+        "position": 4,
+        "relationshipPreviewColumns": [],
+        "id": "amount",
+        "column": "amount"
+      },
+      {
+        "position": 5,
+        "relationshipPreviewColumns": [],
+        "id": "created_at",
+        "column": "created_at"
+      },
+      {
+        "hiddenInTable": true,
+        "position": 6,
+        "relationshipPreviewColumns": [],
+        "id": "canceled_reason",
+        "column": "canceled_reason"
+      },
+      {
+        "position": 7,
+        "relationshipPreviewColumns": [],
+        "id": "active",
+        "hiddenInForm": true,
+        "column": "active"
+      },
+      {
+        "hiddenInTable": true,
+        "position": 8,
+        "relationshipPreviewColumns": [],
+        "id": "canceled_at",
+        "hiddenInForm": true,
+        "column": "canceled_at"
+      },
+      {
+        "hiddenInTable": true,
+        "position": 9,
+        "relationshipPreviewColumns": [],
+        "id": "updated_at",
+        "hiddenInForm": true,
+        "column": "updated_at"
+      }
+    ]
+  }
+}

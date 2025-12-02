@@ -1,0 +1,59 @@
+{
+  "id": "1",
+  "meta": {
+    "name": "Admin Panel Demo",
+    "icon": "https://web.kottster.app/icon.png"
+  },
+  "navItems": [
+    {
+      "id": "users",
+      "name": "Users",
+      "icon": "users"
+    },
+    {
+      "id": "instructors",
+      "name": "Instructors",
+      "icon": "users"
+    },
+    {
+      "id": "courses",
+      "name": "Courses",
+      "icon": "bookOpen"
+    },
+    {
+      "id": "payments",
+      "name": "Payments",
+      "icon": "creditCard"
+    },
+    {
+      "id": "analyticsDashboard",
+      "name": "Analytics Dashboard",
+      "icon": "pieChart"
+    },
+    {
+      "id": "growthChart",
+      "name": "Growth Chart",
+      "icon": "barChart2"
+    },
+    {
+      "id": "locationsOverview",
+      "name": "Locations Overview",
+      "icon": "barChart2"
+    },
+    {
+      "id": "controlPanel",
+      "name": "Control Panel",
+      "icon": "briefcase"
+    }
+  ],
+  "menuPageOrder": [
+    "users",
+    "instructors",
+    "courses",
+    "payments",
+    "analyticsDashboard",
+    "growthChart",
+    "locationsOverview",
+    "controlPanel"
+  ]
+}

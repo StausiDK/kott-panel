@@ -1,0 +1,36 @@
+{
+  "version": "1.0",
+  "type": "table",
+  "title": "Users",
+  "icon": "users",
+  "config": {
+    "dataSource": "postgres-db",
+    "fetchStrategy": "databaseTable",
+    "table": "users",
+    "allowInsert": false,
+    "columns": [
+      {
+        "hiddenInTable": true,
+        "column": "updated_at"
+      },
+      {
+        "formFieldSpan": "6",
+        "column": "first_name"
+      },
+      {
+        "formFieldSpan": "6",
+        "column": "last_name"
+      }
+    ],
+    "relationships": [
+      {
+        "key": "user_activities_by_user_id",
+        "hiddenInTable": true
+      },
+      {
+        "key": "payments_by_user_id",
+        "hiddenInTable": true
+      }
+    ]
+  }
+}
